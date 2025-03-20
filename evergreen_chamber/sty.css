@@ -1,0 +1,246 @@
+.green_bg{background-color: #21ba57;}
+.greendark_bg{
+  background-color: #107b32;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+.red_bg{background-color: #f4525b;}
+.reddark_bg{
+  background-color: #95262d;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+.orange_bg{background-color: #f7a13c;}
+.orangedark_bg{
+  background-color: #a66515;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+
+
+
+
+.dis_right {
+    padding-left: 50px;
+	color:#fff;
+}
+.dis_left {
+	color:#fff;
+}
+.card-height-100 {
+    /*height: calc(160% - 1.5rem);*/
+}
+.meeting_details h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+.timing_details h1 {font-weight:400;font-size:5rem;}
+.timing_details h3 {font-weight:400;font-size:1.5rem;}
+:root {
+  --numDays: 5;
+  --numHours: 16;
+  --timeHeight: 60px;
+  --calBgColor: #fff1f8;
+  --eventBorderColor: #f2d3d8;
+  --eventColor1: #ffd6d1;
+  --eventColor2: #fafaa3;
+  --eventColor3: #e2f8ff;
+  --eventColor4: #d1ffe6;
+}
+body{
+    overflow: hidden;
+}
+
+.calendar {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  margin: 2rem;
+}
+
+.timeline-container {
+    overflow-y: hidden !important;
+    position: relative;
+}
+
+.timeline {
+    display: grid;
+    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+}
+
+.time-marker {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.days {
+  display: grid;
+  grid-column: 2;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.events {
+  display: grid;
+  grid-template-rows: repeat(960, 1px);
+  border-radius: 5px;
+  background: var(--calBgColor);
+  background-color:#509f6b00;
+  /*background-color: #509f6b;*/
+}
+
+.time-marker{
+  /* display: flex; */
+  align-items: center;
+  /* border-top: 2px solid #010c05; */
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.start-10 {
+  grid-row-start: 2;
+}
+
+.start-12 {
+  grid-row-start: 4;
+}
+
+.start-1 {
+  grid-row-start: 5;
+}
+
+.start-2 {
+  grid-row-start: 6;
+}
+
+.end-12 {
+  grid-row-end: 4;
+}
+
+.end-1 {
+  grid-row-end: 5;
+}
+
+.end-3 {
+  grid-row-end: 7;
+}
+
+.end-4 {
+  grid-row-end: 8;
+}
+
+.end-5 {
+  grid-row-end: 9;
+}
+
+.title {
+  font-weight: bold;
+  /* margin-bottom: 0.25rem; */
+}
+.time{
+  font-weight: bold;
+}
+
+.event {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  border: 0px solid #fff;
+  border-radius: 0px;
+  padding: 2rem;
+  margin: 0 0.5rem;
+  background-color: #509f6b;
+  height: 100%; /* Allow the event to expand based on the container size */
+  width: 100%; /* Expand to fill the container width */
+  box-sizing: border-box; /* Ensure padding and borders are included in the size */
+  text-align: center; /* Ensure text is centered */
+  color: #fff; /* Ensure text is visible */
+  font-size: 1rem; /* Adjust font size for readability */
+  white-space: normal; /* Ensure text wraps to the next line if needed */
+}
+
+.event p {
+  margin: 0; /* Remove default margin for <p> tags */
+  padding: 0; /* Remove default padding for <p> tags */
+  line-height: 1.5; /* Adjust line spacing for better readability */
+}
+
+
+.space,
+.date {
+  height: 60px
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.corp-fi {
+  background: var(--eventColor1);
+}
+
+.ent-law {
+  background: var(--eventColor2);
+}
+
+.writing {
+  background: var(--eventColor3);
+}
+
+.securities {
+  /*background: var(--eventColor4);*/
+}
+
+.date {
+  display: flex;
+  gap: 1em;
+}
+
+.date-num {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline;
+}
+
+.date-day {
+  display: inline;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.meeting_details h4 {
+    font-weight: 400;
+}
+
+
+.event.red_event{background-color:#bd646a!important;}
+.event.orange_event{background-color:#c08244!important;}
+
+.event.start-2.end-5.securities .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 32px;
+        margin-bottom: 6px;
+}
+
+.event.securities .time {
+    /* font-size: 1.3rem;
+    font-weight: 600; */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
