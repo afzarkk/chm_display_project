@@ -3,10 +3,10 @@
 date_default_timezone_set('Asia/Kolkata');
 
 // Database credentials
-$host     = '192.168.1.22';
+$host     = '';
 $dbname   = 'scheduler';
-$username = 'my_root';
-$password = 'my@123456';
+$username = '';
+$password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
